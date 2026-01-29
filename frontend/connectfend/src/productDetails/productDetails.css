@@ -45,7 +45,7 @@
 }
 
 .pd-title {
-  font-size: 42px;
+  font-size: 38px;
   font-weight: 700;
   color: #222;
   margin-bottom: 20px;
@@ -65,7 +65,8 @@
 
 .pd-overview p {
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 1.7;
+  font-weight: 400;
   color: #444;
   margin-bottom: 10px;
 }
@@ -81,7 +82,8 @@
   color: #fff;
   padding: 14px 32px;
   border-radius: 6px;
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 18px;
   text-decoration: none;
   transition: background 0.2s;
 }
@@ -97,6 +99,7 @@
   padding: 12px 28px;
   border-radius: 6px;
   font-weight: 600;
+  font-size: 18px;
   cursor: pointer;
 }
 
@@ -131,7 +134,7 @@
 .pd-tab-btn {
   background: transparent;
   border: none;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 600;
   color: #888;
   padding: 10px 5px;
@@ -143,6 +146,8 @@
 
 .pd-tab-btn.active {
   color: #26AAE3;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .pd-tab-btn.active::after {
@@ -178,6 +183,113 @@
 
 /* SECTION HEADERS WITHIN TABS (Optional, can hide if redundant) */
 .section-title {
+  /* --- TOSIBOX SPECIALIZED VIEW STYLES --- */
+
+  .pd-tosibox-theme .pd-hero {
+    /* You can adjust the hero background/layout specific for Tosibox if needed */
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  }
+
+  .pd-tosibox-content {
+    margin-top: 3rem;
+  }
+
+  .pd-tosibox-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: flex-start;
+    /* Align tabs to left for cleaner look with many items */
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #eaeaea;
+    margin-bottom: 2rem;
+  }
+
+  .pd-tosibox-tabs .pd-tab-btn {
+    /* Using your existing button styles but maybe tweaking for smaller/more numerous tabs */
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+    white-space: nowrap;
+  }
+
+  .pd-tosibox-variant-panel {
+    animation: fadeIn 0.4s ease-in-out;
+  }
+
+  .variant-title,
+  .section-title {
+    font-size: 24px;
+    line-height: 1.3;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 32px;
+    /* Consistency */
+    color: #2c3e50;
+  }
+
+  .variant-overview {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-left: 4px solid #007bff;
+    /* Accordion-style highlight */
+    border-radius: 4px;
+  }
+
+  .variant-overview h4,
+  .variant-specs h4,
+  .subsection-title {
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #495057;
+    margin-top: 24px;
+  }
+
+  .variant-overview p {
+    font-size: 18px;
+    line-height: 1.7;
+    font-weight: 400;
+    color: #444;
+  }
+
+  /* NEW STRUCTURED SPECS STYLES */
+  .spec-category {
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+
+  .spec-list {
+    list-style: none;
+    /* We handle bullets manually or via string */
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+
+  .spec-list li {
+    font-size: 17.5px;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 4px;
+    padding-left: 0;
+  }
+
+  /* Deprecating .variant-specs-pre, keeping for fallback just in case */
+  .variant-specs-pre {
+    background: transparent;
+    color: #444;
+    padding: 0;
+    font-family: "Oxygen", sans-serif;
+    font-size: 17.5px;
+    line-height: 1.7;
+    white-space: pre-wrap;
+    border: none;
+  }
+
   display: none;
   /* Hide since tab name tells you what it is */
 }
