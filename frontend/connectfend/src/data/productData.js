@@ -1270,9 +1270,9 @@ const productData = [
                     },
                     {
                         "id": "kerlink-cloudgate",
-                        "name": "Kerlink & cloudgate",
+                        "name": "LoRaWAN Gateway",
                         "description": "Kerlink INDOOR: xxxxxxxxxx\n  Range: -20°C +55°C, (for gateway only, without power supply)\n  Casing: IP30\n  Humidity: 5% to 95%\n\nKerlink OUTDOOR:xxxxxxxxxxxxx\n   Range: -40°C +60°C\n   Casing: IP67 Alu (Back), Polycarbonate (Front), Inox\n(mounting kit)\n    Humidity: 95%\n\nCloudGate Mini:\n    Humidity: 5% - 95%\n    Range: -40°C to +85°C\n   Case: Aluminium case",
-                        "productGroup": "Kerlink & cloudgate",
+                        "productGroup": "LoRaWAN Gateway",
                         "image": wirnetIndoorImg,
                         "images": [wirnetOutdoorImg, cloudgateImg],
                         "brochure": null,
