@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+
+.license-section {
+  width: 100%;
+  padding: 60px 0 90px;
+  text-align: center;
+  font-family: "Oxygen", sans-serif;
+}
+
+.license-title {
+  font-size: 52px;
+  color: #26AAE3;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+/* GRID */
+.license-grid {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+.license-card {
+  width: 312px;
+  height: auto;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.license-card img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: contain;
+}
+
+.cert-label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .license-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .license-section {
+    padding: 40px 20px 60px;
+  }
+
+  .license-title {
+    font-size: clamp(1.875rem, 6vw, 2.5rem);
+    margin-bottom: 35px;
+  }
+
+  .license-grid {
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .license-card {
+    width: 45%;
+    /* Keep 2 per row on tablet/mobile for better density */
+    height: auto;
+    aspect-ratio: 3/4;
+    max-width: 250px;
+    padding: 16px;
+  }
+
+  .cert-label {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .license-section {
+    padding: 30px 15px 50px;
+  }
+
+  .license-title {
+    font-size: 1.875rem;
+    margin-bottom: 30px;
+  }
+
+  .license-grid {
+    gap: 15px;
+  }
+
+  .license-card {
+    height: auto;
+    width: 100%;
+    max-width: 280px;
+    /* Single column only on very small screens */
+    margin: 0 auto;
+    padding: 18px;
+  }
+
+  .cert-label {
+    font-size: 15px;
+  }
+}

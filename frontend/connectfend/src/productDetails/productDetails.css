@@ -1,0 +1,464 @@
+/* src/productDetails/productDetails.css */
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+.pd-page {
+  font-family: "Oxygen", sans-serif;
+  color: #333;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 5%;
+}
+
+.pd-not-found {
+  text-align: center;
+  padding: 100px;
+  font-size: 24px;
+  color: #888;
+}
+
+/* BREADCRUMBS */
+.pd-breadcrumb {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.pd-breadcrumb a {
+  color: #666;
+  text-decoration: none;
+}
+
+.pd-breadcrumb a:hover {
+  color: #26AAE3;
+}
+
+/* HERO SECTION */
+.pd-hero {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 80px;
+}
+
+.pd-hero-content {
+  flex: 1;
+}
+
+.pd-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.pd-tagline {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.pd-overview {
+  margin-bottom: 40px;
+}
+
+.pd-overview p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.pd-actions {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: #26AAE3;
+  color: #fff;
+  padding: 14px 32px;
+  border-radius: 6px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover {
+  background: #1e8bbd;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid #ddd;
+  color: #666;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-secondary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.pd-hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  background: #fcfcfc;
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.pd-hero-image img {
+  max-width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+}
+
+/* TABS */
+.pd-tabs {
+  display: flex;
+  gap: 30px;
+  border-bottom: 2px solid #eee;
+  margin-bottom: 30px;
+}
+
+.pd-tab-btn {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #888;
+  padding: 10px 5px;
+  cursor: pointer;
+  position: relative;
+  font-family: inherit;
+  transition: color 0.3s;
+}
+
+.pd-tab-btn.active {
+  color: #26AAE3;
+}
+
+.pd-tab-btn.active::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #26AAE3;
+  animation: fadeIn 0.3s;
+}
+
+.pd-tab-content {
+  min-height: 400px;
+  /* Avoid layout shift */
+}
+
+/* FADE IN ANIM FOR TAB CONTENT */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.pd-tab-panel {
+  animation: fadeIn 0.4s ease-out;
+}
+
+/* SECTION HEADERS WITHIN TABS (Optional, can hide if redundant) */
+.section-title {
+  display: none;
+  /* Hide since tab name tells you what it is */
+}
+
+/* OVERVIEW TEXT */
+.pd-overview-text p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* FEATURES LIST */
+.pd-features-list {
+  list-style: disc;
+  /* Bullet points */
+  padding-left: 20px;
+  /* Indent */
+  display: block;
+  /* Stack vertically */
+  margin-top: 10px;
+}
+
+.pd-features-list li {
+  background: transparent;
+  padding: 8px 0;
+  border-radius: 0;
+  border-left: none;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* SPECS TABLE */
+.pd-specs-table-wrapper {
+  overflow-x: auto;
+}
+
+.pd-specs-table {
+  width: 100%;
+  border-collapse: collapse;
+  max-width: 800px;
+}
+
+.pd-specs-table td {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.spec-label {
+  font-weight: 700;
+  color: #555;
+  width: 30%;
+  background: #fdfdfd;
+}
+
+.spec-value {
+  color: #222;
+}
+
+/* RELATED GRID */
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.related-card {
+  text-decoration: none;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.related-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.related-img {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.related-img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.related-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .pd-hero {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+
+  .pd-hero-image img {
+    max-height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pd-page {
+    padding: 30px 20px;
+  }
+
+  .pd-breadcrumb {
+    font-size: 13px;
+    margin-bottom: 25px;
+  }
+
+  .pd-hero {
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+
+  .pd-title {
+    font-size: clamp(1.75rem, 6vw, 2.25rem);
+    margin-bottom: 15px;
+  }
+
+  .pd-tagline {
+    font-size: 17px;
+    margin-bottom: 15px;
+  }
+
+  .pd-overview p {
+    font-size: 16px;
+  }
+
+  .pd-actions {
+    gap: 15px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    text-align: center;
+    padding: 16px 24px;
+    min-height: 50px;
+    font-size: 16px;
+  }
+
+  .pd-hero-image {
+    padding: 30px;
+  }
+
+  .pd-hero-image img {
+    max-height: 220px;
+  }
+
+  .pd-tabs {
+    gap: 20px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+
+  .pd-tab-btn {
+    font-size: 16px;
+    white-space: nowrap;
+    min-width: fit-content;
+  }
+
+  .pd-tab-content {
+    min-height: 300px;
+  }
+
+  .pd-overview-text p {
+    font-size: 15px;
+  }
+
+  .pd-features-list li {
+    font-size: 15px;
+  }
+
+  .pd-specs-table td {
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  .spec-label {
+    width: 40%;
+  }
+
+  .related-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .related-img {
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pd-page {
+    padding: 20px 15px;
+  }
+
+  .pd-not-found {
+    padding: 60px 20px;
+    font-size: 18px;
+  }
+
+  .pd-breadcrumb {
+    font-size: 12px;
+  }
+
+  .pd-hero {
+    gap: 25px;
+    margin-bottom: 40px;
+  }
+
+  .pd-title {
+    font-size: 1.75rem;
+  }
+
+  .pd-tagline {
+    font-size: 16px;
+  }
+
+  .pd-overview p {
+    font-size: 15px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    padding: 14px 20px;
+    font-size: 15px;
+  }
+
+  .pd-hero-image {
+    padding: 20px;
+  }
+
+  .pd-tabs {
+    gap: 15px;
+  }
+
+  .pd-tab-btn {
+    font-size: 15px;
+    padding: 8px 3px;
+  }
+
+  .pd-specs-table td {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .spec-label {
+    width: 45%;
+  }
+
+  .related-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .related-card {
+    padding: 12px;
+  }
+
+  .related-img {
+    height: 100px;
+  }
+
+  .related-title {
+    font-size: 13px;
+  }
+}
