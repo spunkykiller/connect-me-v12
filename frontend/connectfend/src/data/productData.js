@@ -129,36 +129,7 @@ const productData = [
                         "overview": "The Uflo U60 advanced series is a BTU meter/energy meter that measures energy consumption in liquid heating/cooling systems by calculating energy based on flow rate and temperature difference. Its static ultrasonic technology is based on the measurement of the transit time. It has high accuracy and provides real-time data display and transmission via various communication protocols. The U60 meters can be installed with various flow and temperature sensors in multiple configurations depending on the application and site requirements.",
                         "longDescription": "Uflo ultrasonic BTU Meter- U60 Advanced series\nSize : DN15 to DN40\nTemp Sensor : PT1000 Jumo sensors\nBattery Life : > 12 years\nReplaceable: Battery & Temp. Sensors\nMID certified"
                     },
-                    {
-                        "id": "uflo-u70-advanced-series",
-                        "name": "Uflo U70 Advanced Series",
-                        "description": "Uflo ultrasonic BTU Meter- U70 Advanced series\nSize : DN15 to DN40\nTemp Sensor : PT1000 Jumo sensors\nBattery Life : > 12 years\nReplaceable: Battery & Temp. Sensors\nMID certified",
-                        "productGroup": "Uflo U70 Advanced Series",
-                        "image": u70AdvImg,
-                        "images": [],
-                        "brochure": null,
-                        "specs": {
-                            "Size": "DN15 to DN40",
-                            "Temp Sensor": "PT1000 Jumo sensors",
-                            "Battery Life": "> 12 years",
-                            "Replaceable": "Battery & Temp. Sensors",
-                            "Certification": "MID certified"
-                        },
-                        "tags": [
-                            "Meters",
-                            "Inline Ultrasonic BTU Meters"
-                        ],
-                        "features": [
-                            "Uflo ultrasonic BTU Meter- U70 Advanced series",
-                            "Size : DN15 to DN40",
-                            "Temp Sensor : PT1000 Jumo sensors",
-                            "Battery Life : > 12 years",
-                            "Replaceable: Battery & Temp. Sensors",
-                            "MID certified"
-                        ],
-                        "overview": "Uflo U70 Advanced Series represents the next generation of ultrasonic metering, offering enhanced precision and durability for demanding industrial and commercial applications.",
-                        "longDescription": "Uflo ultrasonic BTU Meter- U70 Advanced series\nSize : DN15 to DN40\nTemp Sensor : PT1000 Jumo sensors\nBattery Life : > 12 years\nReplaceable: Battery & Temp. Sensors\nMID certified"
-                    },
+
                     {
                         "id": "uflo-u50-compact-series",
                         "name": "Uflo U50 Compact Series",
@@ -260,6 +231,36 @@ const productData = [
                 name: "Inline Ultrasonic Water Meters",
                 slug: "inline-ultrasonic-water",
                 products: [
+                    {
+                        "id": "uflo-u70-advanced-series",
+                        "name": "Uflo U70 Advanced Series",
+                        "description": "Uflo ultrasonic BTU Meter- U70 Advanced series\nSize : DN15 to DN40\nTemp Sensor : PT1000 Jumo sensors\nBattery Life : > 12 years\nReplaceable: Battery & Temp. Sensors\nMID certified",
+                        "productGroup": "Uflo U70 Advanced Series",
+                        "image": u70AdvImg,
+                        "images": [],
+                        "brochure": null,
+                        "specs": {
+                            "Size": "DN15 to DN40",
+                            "Temp Sensor": "PT1000 Jumo sensors",
+                            "Battery Life": "> 12 years",
+                            "Replaceable": "Battery & Temp. Sensors",
+                            "Certification": "MID certified"
+                        },
+                        "tags": [
+                            "Meters",
+                            "Inline Ultrasonic Water Meters"
+                        ],
+                        "features": [
+                            "Uflo ultrasonic BTU Meter- U70 Advanced series",
+                            "Size : DN15 to DN40",
+                            "Temp Sensor : PT1000 Jumo sensors",
+                            "Battery Life : > 12 years",
+                            "Replaceable: Battery & Temp. Sensors",
+                            "MID certified"
+                        ],
+                        "overview": "Uflo U70 Advanced Series represents the next generation of ultrasonic metering, offering enhanced precision and durability for demanding industrial and commercial applications.",
+                        "longDescription": "Uflo ultrasonic BTU Meter- U70 Advanced series\nSize : DN15 to DN40\nTemp Sensor : PT1000 Jumo sensors\nBattery Life : > 12 years\nReplaceable: Battery & Temp. Sensors\nMID certified"
+                    },
                     {
                         "id": "uflo-u40-compact-series",
                         "name": "Uflo U40 Compact Series",
@@ -1491,40 +1492,7 @@ const productData = [
                     },
                 ]
             },
-            {
-                name: "Temperature & Humidity Sensors",
-                slug: "temp-humidity-sensors",
-                products: [
-                    {
-                        "id": "uconnect-u300-thm",
-                        "name": "Uconnect U300-THM Temperature & Humidity Sensor",
-                        "description": "Wall-mount Temperature & Humidity Sensor.\nIP65 Enclosure for outdoor/indoor use.\nRS485 Modbus RTU Output.",
-                        "productGroup": "Uconnect U300-THM",
-                        "image": uconnectThmImg,
-                        "images": [],
-                        "brochure": null,
-                        "specs": {
-                            "Temperature Range": "-40°C to +80°C",
-                            "Humidity Range": "0% to 100% RH",
-                            "Output": "RS485 Modbus RTU",
-                            "Power Supply": "12-24V DC",
-                            "Protection": "IP65"
-                        },
-                        "tags": [
-                            "Sensors & Actuators",
-                            "Temperature & Humidity Sensors"
-                        ],
-                        "features": [
-                            "High precision temperature and humidity measurement",
-                            "Standard Modbus-RTU protocol",
-                            "Waterproof and dustproof IP65 enclosure",
-                            "Wall-mounted installation",
-                            "Wide power supply range"
-                        ],
-                        "longDescription": "The U300-THM is a robust temperature and humidity transmitter designed for industrial and building automation applications. It features high accuracy sensors protected by an IP65 enclosure, making it suitable for harsh environments. The device communicates via RS485 using the Modbus RTU protocol, ensuring easy integration with PLCs, BMS, and SCADA systems."
-                    }
-                ]
-            },
+
             {
                 name: "Water Leak Detection Sensor",
                 slug: "water-leak",
@@ -1639,72 +1607,7 @@ const productData = [
 
                 ]
             },
-            {
-                name: "Level Sensors",
-                slug: "level-sensors",
-                products: [
-                    {
-                        "id": "uconnect-cls-200",
-                        "name": "Uconnect Capacitive Level Sensor",
-                        "description": "Non-contact liquid level detection for tanks and containers.\nIP65 Enclosure. Sensitivity Adjustment.",
-                        "productGroup": "Uconnect Capacitive Level Sensor",
-                        "image": uconnectClsImg,
-                        "images": [],
-                        "brochure": null,
-                        "specs": {
-                            "Detection": "Non-contact Capacitive",
-                            "Sensitivity": "Adjustable",
-                            "Enclosure": "IP65",
-                            "Output": "Relay / NPN / PNP (Model dependent)"
-                        },
-                        "tags": [
-                            "Sensors & Actuators",
-                            "Level Sensors"
-                        ],
-                        "features": [
-                            "Detects liquid level through non-metallic container walls",
-                            "Easy external mounting",
-                            "LED status indicator",
-                            "Sensitivity adjustment potentiometer",
-                            "Waterproof IP65 design"
-                        ],
-                        "longDescription": "A robust capacitive level sensor designed for non-contact level detection of liquids in non-metallic tanks. Ideal for water, chemical, or fuel tanks where internal sensor installation is difficult or undesirable."
-                    },
-                    {
-                        "id": "uem300-cl-milesight",
-                        "name": "Wireless Capacitive Level Sensor",
-                        "description": "Uconnect Wireless Capacitive Level Sensor\nPower Supply : 2 × ER14505 lithium batteries (3.6 V)\nCommunication : LoRa / LoRaWAN Class A\nBattery Life : Upto 4.6 years",
-                        "productGroup": "UEM300-CL/ Milesight",
-                        "image": null,
-                        "images": [],
-                        "brochure": null,
-                        "specs": {
-                            "Power Supply": "2 × ER14505 lithium batteries (3.6 V)",
-                            "Communication": "LoRa / LoRaWAN Class A",
-                            "Battery Life": "Upto 4.6 years"
-                        },
-                        "tags": [
-                            "Sensors & Actuators",
-                            "Level Sensors"
-                        ],
-                        "features": [
-                            "LoRaWAN® Communication",
-                            "Non-Contact Capacitive liquid level sensing",
-                            "Battery life up to 4.6 years",
-                            "IP65 / IP67 Rated",
-                            "Adjustable Sensitivity for various liquids and tank walls",
-                            "Flexible Mounting",
-                            "Built-in Antenna",
-                            "Low Battery Alert",
-                            "Industrial Reliability with long-term operation"
-                        ],
-                        "overview": "The UEM300-CL Wireless Capacitive Proximity Sensor is a compact, non-contact liquid level detection solution designed for reliable monitoring of water and liquid soap levels. Using advanced capacitive sensing technology, the sensor detects liquid presence through non-metallic container walls without direct contact, ensuring hygiene and long-term durability.\nPowered by low-energy LoRaWAN® wireless technology, UEM300-CL delivers long-range communication and ultra-low power consumption, making it ideal for smart buildings and facility management applications. With flexible installation options, robust enclosure protection, and multi-platform compatibility, UEM300-CL enables efficient monitoring, automated alerts, and reduced maintenance costs.",
-                        "longDescription": "Uconnect Wireless Capacitive Level Sensor\nPower Supply : 2 × ER14505 lithium batteries (3.6 V)\nCommunication : LoRa / LoRaWAN Class A\nBattery Life : Upto 4.6 years"
-                    },
 
-
-                ]
-            }
         ]
     },
     // =========================================================================
