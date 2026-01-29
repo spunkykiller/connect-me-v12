@@ -5,14 +5,18 @@ import { Link } from "react-router-dom";
 
 
 export default function Products() {
-  // Flatten products from the new structured data
+  // Flatten products from the new structured data, including category and subcategory info for links
   const products = productsData.flatMap(category =>
-    category.subcategories.flatMap(subcategory => subcategory.products)
-  ).map(p => ({
-    ...p,
-    title: p.name,       // Map name to title to match component usage
-    subtitle: p.tags?.[0] || "Product" // Use first tag or default
-  }));
+    category.subcategories.flatMap(subcategory =>
+      subcategory.products.map(product => ({
+        ...product,
+        title: product.name,
+        subtitle: product.tags?.[0] || "Product",
+        // Construct proper link path: /products/{category}/{subcategory}/{productId}
+        link: `/products/${category.slug}/${subcategory.slug}/${product.id}`
+      }))
+    )
+  );
 
   // show only the first 4 products in marquee
   const displayProducts = products.slice(0, 4);
