@@ -57,9 +57,13 @@ export default function Footer() {
                         </strong>
                         <p className="footer-location">
                             Warehouse-7, Al Qaseer Warehouse,<br />
-                            Ras Al Khor Industrial area-2, Dubai - UAE.<br />
-                            Office : +971 4 234 8480<br />
-                            Office : +971 4 234 9525<br />
+                            Ras Al Khor Industrial area-2, Dubai - UAE.
+                        </p>
+                        <p className="footer-location" style={{ marginTop: "10px" }}>
+                            Office : +971 4 234 8480 /<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+971 4 234 9525
+                        </p>
+                        <p className="footer-location" style={{ marginTop: "10px" }}>
                             Email: info@connectme.biz
                         </p>
                     </div>
@@ -74,15 +78,21 @@ export default function Footer() {
                     <div className="footer-location-block">
                         <strong>Saudi Arabia</strong>
                         <p className="footer-location">
-                            Office 14, 2nd Floor, Al Khobar Center, Al Khobar, KSA.
+                            Office 14, 2nd Floor, Al Khobar Center,<br />
+                            Al Khobar, KSA.
                         </p>
                     </div>
 
                     <div className="footer-location-block">
                         <strong>Qatar Office</strong>
                         <p className="footer-location">
-                            First Floor, Building 98, Street 220, B-Ring Road, Zone 15, Doha, Qatar.<br />
-                            Mobile : +974 7135 2869<br />
+                            First Floor, Building 98, Street 220,<br />
+                            B-Ring Road, Zone 15, Doha, Qatar.
+                        </p>
+                        <p className="footer-location" style={{ marginTop: "10px" }}>
+                            Mobile : +974 7135 2869
+                        </p>
+                        <p className="footer-location" style={{ marginTop: "10px" }}>
                             Email: sales.qat@connectme.biz
                         </p>
                     </div>
