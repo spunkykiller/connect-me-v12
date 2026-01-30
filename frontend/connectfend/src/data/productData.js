@@ -45,7 +45,7 @@ import lorawanGwImg from "../assets/products/Lorawan gateway.png";
 
 import u60AdvImg from "../assets/products/u60 advanced series.png";
 import u70AdvImg from "../assets/products/u70.png";
-import u50NewImg from "../assets/products/U50_Ultrasonic_Meter_Update.png";
+import u50NewImg from "../assets/products/U50_Compact_New.png";
 import u50CompactImgNew from "../assets/products/u50 compact.jpg";
 import u50BulkImgNew from "../assets/products/u50-bulk btu meter.jpg";
 import u40BulkImgNew from "../assets/products/uflo_u40_bulk.png";
