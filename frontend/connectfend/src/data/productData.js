@@ -71,6 +71,7 @@ import u2301Img from "../assets/products/U2301_Serial_to_TCP.png";
 import tkn280xcImg from "../assets/products/Gas Konnect tkn2801C _ pulse reader + relay switch.png";
 import tkn2803pImg from "../assets/products/tkn2803p_pulse_lorawan.jpg";
 import modbusLorawanImg from "../assets/products/modbus_lorawan_converter.jpg";
+import wiredLeakSensorImg from "../assets/products/wired_leak_sensor.png";
 
 import decentlabIamImg from "../assets/products/decentlab_iam.png";
 
@@ -1637,7 +1638,7 @@ const productData = [
                         "name": "Wired Location Area Leak Sensor",
                         "description": "Uconnect Wired Location Area Leak Sensor\nPower Supply :  12V DC, 24V DC, 24V AC, or 220V AC\nProtocols Supported : MODBUS-RTU, MODBUS-ASCII\nMax Cable Length : 1200 meters (RS-485)",
                         "productGroup": "U3101L-ALD-S",
-                        "image": null,
+                        "image": wiredLeakSensorImg,
                         "images": [],
                         "brochure": null,
                         "specs": {
