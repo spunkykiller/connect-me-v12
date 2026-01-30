@@ -58,7 +58,8 @@ export default function Footer() {
                         <p className="footer-location">
                             Warehouse-7, Al Qaseer Warehouse,<br />
                             Ras Al Khor Industrial area-2, Dubai - UAE.<br />
-                            Office : +971 4 234 8480 / +971 4 234 9525<br />
+                            Office : +971 4 234 8480<br />
+                            Office : +971 4 234 9525<br />
                             Email: info@connectme.biz
                         </p>
                     </div>
