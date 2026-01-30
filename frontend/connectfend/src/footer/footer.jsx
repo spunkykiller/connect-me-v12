@@ -50,12 +50,6 @@ export default function Footer() {
                 {/* COLUMN 3: CONTACT & HQ */}
                 <div className="footer-col footer-contact">
                     <h2 className="footer-heading">Get In Touch</h2>
-                    <div className="contact-links">
-                        <a href="mailto:info@connectme.biz">info@connectme.biz</a>
-                        <a href="mailto:sales@connectme.biz">sales@connectme.biz</a>
-                        <a href="tel:+97142349525">+97142349525</a>
-                        <a href="tel:+97142348480">+97142348480</a>
-                    </div>
 
                     <div className="footer-location-block" style={{ marginTop: "30px" }}>
                         <strong>
