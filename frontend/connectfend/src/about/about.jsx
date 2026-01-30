@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.css";
 import dubai from "../assets/dubai.png";
-import heroImg from "../assets/logo.png";
+
 
 import founder from "../assets/founder.jpg";
 import founder2 from "../assets/founder2.jpg";
@@ -18,7 +18,7 @@ export default function AboutPage() {
 
             {/* HERO SECTION */}
             <div className="about-hero">
-                <img src={heroImg} alt="About ConnectME" className="about-hero-img" />
+                <img src={dubai} alt="About ConnectME" className="about-hero-img" />
 
                 <div className="about-hero-overlay">
                     <h1>Smart Metering. Secure IoT. Made for Scale.</h1>
