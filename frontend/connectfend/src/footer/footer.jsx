@@ -57,10 +57,10 @@ export default function Footer() {
                         <a href="tel:+97142348480">+97142348480</a>
                     </div>
 
-                    <h2 className="footer-heading" style={{ marginTop: "30px" }}>
-                        UAE Office <FaMapMarkerAlt size={14} color="#fff" style={{ marginLeft: "6px" }} />
-                    </h2>
-                    <div className="footer-location-block">
+                    <div className="footer-location-block" style={{ marginTop: "30px" }}>
+                        <strong>
+                            UAE Office <FaMapMarkerAlt size={14} color="#fff" style={{ marginLeft: "6px" }} />
+                        </strong>
                         <p className="footer-location">
                             Warehouse-7, Al Qaseer Warehouse,<br />
                             Ras Al Khor Industrial area-2, Dubai - UAE.<br />
