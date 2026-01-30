@@ -7,9 +7,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: white;
+  background: var(--color-bg);
   /* Clean white background */
-  padding: 0 40px;
+  padding: 0 var(--spacing-container);
   /* Matched to Header padding */
   box-sizing: border-box;
 }
@@ -53,9 +53,9 @@
 }
 
 .highlight-text {
-  color: #26AAE3;
+  color: var(--color-primary);
   /* Premium Blue Accent */
-  background: linear-gradient(120deg, #26AAE3 0%, #00d2ff 100%);
+  background: linear-gradient(120deg, var(--color-primary) 0%, #00d2ff 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -63,9 +63,9 @@
 
 .hero-subtitle {
   font-family: 'Oxygen', sans-serif;
-  font-size: var(--font-small);
-  line-height: 1.6;
-  color: #555;
+  font-size: var(--font-h4);
+  line-height: var(--lh-normal);
+  color: var(--color-text-muted);
   margin-bottom: 2.5rem;
   max-width: 90%;
 }
@@ -86,7 +86,7 @@
 }
 
 .cta-button.primary {
-  background: #26AAE3;
+  background: var(--color-primary);
   color: white;
   border: none;
   box-shadow: 0 4px 15px rgba(38, 170, 227, 0.3);
@@ -105,8 +105,8 @@
 }
 
 .cta-button.secondary:hover {
-  border-color: #26AAE3;
-  color: #26AAE3;
+  border-color: var(--color-primary);
+  color: var(--color-primary);
 }
 
 /* Right Column: Windowed Video */

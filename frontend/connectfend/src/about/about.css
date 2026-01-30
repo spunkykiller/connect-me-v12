@@ -2,7 +2,7 @@
 
 .about-wrapper {
   font-family: "Oxygen", sans-serif;
-  color: #000;
+  color: var(--color-text-dark);
 }
 
 /* ===========================
@@ -41,15 +41,15 @@
 }
 
 .about-hero-overlay p {
-  font-size: 22px;
+  font-size: var(--font-body-lg);
 }
 
 
 .about-section {
   font-family: "Oxygen", sans-serif;
-  padding: 40px 80px;
+  padding: var(--spacing-section-mobile) var(--spacing-section);
   /* More side padding for breathing room */
-  color: #111;
+  color: var(--color-text-dark);
 }
 
 /* --- TOP TWO COLUMN LAYOUT --- */
@@ -85,7 +85,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #26AAE3;
+  background-color: var(--color-primary);
   /* Blue color */
   color: white;
   padding: 10px;
@@ -93,7 +93,7 @@
   font-weight: 700;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
-  font-size: 18px;
+  font-size: var(--font-body);
   padding-left: 20px;
   text-transform: uppercase;
 }
@@ -139,7 +139,7 @@
 }
 
 .about-card-title {
-  font-size: var(--font-medium);
+  font-size: var(--font-h3);
   font-weight: 700;
   color: #009e5c;
   /* green like screenshot */
@@ -154,9 +154,9 @@
 
 .about-card ul,
 .about-card p {
-  font-size: 18px;
-  line-height: 1.6;
-  color: #333;
+  font-size: var(--font-body);
+  line-height: var(--lh-normal);
+  color: var(--color-text-body);
 }
 
 .about-card-small {
@@ -208,9 +208,10 @@
 
 .founder-title {
   text-align: center;
-  font-size: 36px;
+  font-size: var(--font-h2);
   font-weight: 700;
-  color: #26AAE3;
+  line-height: var(--lh-tight);
+  color: var(--color-primary);
   margin-bottom: 40px;
 }
 

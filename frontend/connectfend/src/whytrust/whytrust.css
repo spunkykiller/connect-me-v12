@@ -7,7 +7,7 @@
   align-items: center;
 
   gap: 60px;
-  padding: 80px 60px;
+  padding: var(--spacing-section) var(--spacing-container);
 
   box-sizing: border-box;
   font-family: "Oxygen", sans-serif;
@@ -20,18 +20,18 @@
 }
 
 .trust-title {
-  font-size: 50px;
+  font-size: var(--font-h1);
   font-weight: 700;
-  color: #26AAE3;
+  line-height: var(--lh-tight);
+  color: var(--color-primary);
   margin-bottom: 70px;
-  line-height: 1.1;
   text-align: left;
 }
 
 .trust-text {
-  font-size: 25px;
-  line-height: 1.38;
-  color: #000;
+  font-size: var(--font-body-lg);
+  line-height: var(--lh-normal);
+  color: var(--color-text-dark);
   text-align: left;
   margin-bottom: 70px;
 }

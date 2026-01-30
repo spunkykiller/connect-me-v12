@@ -2,14 +2,15 @@
 
 .news-section {
   width: 100%;
-  padding: 50px 0 90px;
+  padding: var(--spacing-section) 0;
   font-family: "Oxygen", sans-serif;
 }
 
 .news-title {
-  font-size: 55px;
+  font-size: var(--font-h1);
   font-weight: 700;
-  color: #f28b30;
+  line-height: var(--lh-tight);
+  color: var(--color-accent);
   /* Orange title */
   margin-left: 70px;
 }
@@ -17,7 +18,7 @@
 .news-wrapper {
   width: 100%;
   display: flex;
-  gap: 30px;
+  gap: var(--spacing-gap);
   justify-content: center;
   margin-top: 40px;
   flex-wrap: wrap;
@@ -37,14 +38,14 @@
 
 /* LEFT CONTENT */
 .news-content {
-  padding: 30px;
+  padding: var(--spacing-gap);
   width: 55%;
 }
 
 .news-text {
-  font-size: 24px;
-  line-height: 1.35;
-  color: black;
+  font-size: var(--font-h3);
+  line-height: var(--lh-tight);
+  color: var(--color-text-dark);
   margin-bottom: 20px;
 }
 
@@ -52,11 +53,11 @@
 .news-meta {
   display: flex;
   gap: 25px;
-  font-size: 18px;
+  font-size: var(--font-body);
 }
 
 .news-author {
-  color: #26AAE3;
+  color: var(--color-primary);
   /* blue */
   cursor: pointer;
 }

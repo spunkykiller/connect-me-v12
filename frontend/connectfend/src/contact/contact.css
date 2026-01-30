@@ -1,16 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 
 .contact-section {
-  padding: 40px 0 70px;
+  padding: var(--spacing-section-mobile) 0 70px;
   font-family: "Oxygen", sans-serif;
   text-align: center;
 }
 
 .contact-title {
-  font-size: 60px;
+  font-size: var(--font-h1);
   font-weight: 700;
-  margin-bottom: 30px;
-  color: #000000;
+  line-height: var(--lh-tight);
+  margin-bottom: var(--spacing-gap);
+  color: var(--color-text-dark);
   position: relative;
   left: 20px;
 }
@@ -26,11 +27,11 @@
 .contact-input,
 .contact-textarea {
   width: 100%;
-  padding: 20px;
+  padding: var(--spacing-card);
   border-radius: 8px;
   border: 1px solid #aaa;
   background: #eaeaea;
-  font-size: 22px;
+  font-size: var(--font-body);
   outline: none;
 }
 
@@ -50,11 +51,11 @@
 
 .contact-btn1 {
   margin-top: 10px;
-  background: #26AAE3;
-  color: rgb(0, 0, 0);
+  background: var(--color-primary);
+  color: var(--color-text-dark);
   border: none;
   padding: 12px 0;
-  font-size: 26px;
+  font-size: var(--font-h3);
   border-radius: 8px;
   cursor: pointer;
   width: 300px;
@@ -69,23 +70,24 @@
 }
 
 .ci-section {
-  padding: 40px 0 70px;
+  padding: var(--spacing-section-mobile) 0 70px;
   font-family: "Oxygen", sans-serif;
 }
 
 .ci-title {
-  font-size: 60px;
+  font-size: var(--font-h1);
   font-weight: 700;
+  line-height: var(--lh-tight);
   text-align: left;
   margin-left: 85px;
   margin-bottom: 40px;
-  color: #000000;
+  color: var(--color-text-dark);
 }
 
 .ci-grid {
   display: flex;
   justify-content: center;
-  gap: 35px;
+  gap: var(--spacing-gap);
   padding: 0 50px;
 }
 
@@ -105,26 +107,27 @@
 }
 
 .ci-content {
-  padding: 30px 25px;
+  padding: var(--spacing-gap) 25px;
 }
 
 .ci-icon {
   font-size: 40px;
-  color: #26AAE3;
+  color: var(--color-primary);
   margin-bottom: 15px;
 }
 
 .ci-heading {
-  font-size: 38px;
+  font-size: var(--font-h2);
   font-weight: 700;
+  line-height: var(--lh-tight);
   margin-bottom: 20px;
-  color: #000000;
+  color: var(--color-text-dark);
 }
 
 .ci-content p {
-  font-size: 21px;
-  line-height: 1.6;
-  color: #333;
+  font-size: var(--font-body-lg);
+  line-height: var(--lh-normal);
+  color: var(--color-text-body);
   text-align: left;
 }
 
