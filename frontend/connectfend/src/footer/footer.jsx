@@ -58,12 +58,14 @@ export default function Footer() {
                     </div>
 
                     <h2 className="footer-heading" style={{ marginTop: "30px" }}>
-                        UAE HQ <FaMapMarkerAlt size={14} color="#fff" style={{ marginLeft: "6px" }} />
+                        UAE Office <FaMapMarkerAlt size={14} color="#fff" style={{ marginLeft: "6px" }} />
                     </h2>
                     <div className="footer-location-block">
-                        <strong>Dubai</strong>
                         <p className="footer-location">
-                            Warehouse-7, Al Qaseer Warehouse, Ras Al Khor Ind. Area-2, Dubai.
+                            Warehouse-7, Al Qaseer Warehouse,<br />
+                            Ras Al Khor Industrial area-2, Dubai - UAE.<br />
+                            Office : +971 4 234 8480 / +971 4 234 9525<br />
+                            Email: info@connectme.biz
                         </p>
                     </div>
                 </div>
@@ -82,9 +84,11 @@ export default function Footer() {
                     </div>
 
                     <div className="footer-location-block">
-                        <strong>Qatar</strong>
+                        <strong>Qatar Office</strong>
                         <p className="footer-location">
-                            Office 202, Almana Tower, C-Ring Road, Doha, Qatar.
+                            First Floor, Building 98, Street 220, B-Ring Road, Zone 15, Doha, Qatar.<br />
+                            Mobile : +974 7135 2869<br />
+                            Email: sales.qat@connectme.biz
                         </p>
                     </div>
 

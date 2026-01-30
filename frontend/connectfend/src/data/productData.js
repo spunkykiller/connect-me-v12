@@ -1271,48 +1271,85 @@ const productData = [
                         "longDescription": ""
                     },
                     {
-                        "id": "kerlink-cloudgate",
-                        "name": "LoRaWAN Gateway",
-                        "description": "Kerlink INDOOR: xxxxxxxxxx\n  Range: -20°C +55°C, (for gateway only, without power supply)\n  Casing: IP30\n  Humidity: 5% to 95%\n\nKerlink OUTDOOR:xxxxxxxxxxxxx\n   Range: -40°C +60°C\n   Casing: IP67 Alu (Back), Polycarbonate (Front), Inox\n(mounting kit)\n    Humidity: 95%\n\nCloudGate Mini:\n    Humidity: 5% - 95%\n    Range: -40°C to +85°C\n   Case: Aluminium case",
-                        "productGroup": "LoRaWAN Gateway",
-                        "image": wirnetIndoorImg,
-                        "images": [wirnetOutdoorImg, cloudgateImg],
+                        "id": "kerlink-indoor",
+                        "name": "Kerlink Indoor LoRaWAN Gateway",
+                        "description": "Kerlink INDOOR: The “Wirnet™ iFemtoCell” is the ideal gateway to support your smart city, smart building or every smart project that requests dedicated indoor coverage and/or network densification.\nRange: -20°C +55°C, (for gateway only, without power supply)\nCasing: IP30\nHumidity: 5% to 95%",
+                        "productGroup": "Kerlink Indoor",
+                        "image": modbusLorawanImg,
+                        "images": [],
                         "brochure": null,
                         "specs": {
-                            "Kerlink INDOOR": "xxxxxxxxxx",
-                            "Range": "-40°C to +85°C",
-                            "Casing": "IP67 Alu (Back), Polycarbonate (Front), Inox",
-                            "Humidity": "5% - 95%",
-                            "Kerlink OUTDOOR": "xxxxxxxxxxxxx",
-                            "Case": "Aluminium case"
+                            "Range": "-20°C +55°C",
+                            "Casing": "IP30",
+                            "Humidity": "5% to 95%",
+                            "Backhaul": "Wi-Fi 2.4GHz and Ethernet (RJ45)"
                         },
                         "tags": [
                             "Gateways & Connectivity",
                             "Gateways"
                         ],
                         "features": [
-                            "Kerlink Indoor:",
                             "Indoor LoRa® Gateway",
                             "Ingress protection (IP30)",
                             "Backhaul connectivity: Wi-Fi 2.4GHz and Ethernet (RJ45)",
-                            "Supported LoRaWAN® regional parameters: EU863-870, IN865-",
-                            "867, RU864-870, US902-928, AU915-928, AS923, KR920-923",
-                            "Kerlink Outdoor:",
-                            "Outdoor LoRa® Gateway,",
+                            "Supported LoRaWAN® regional parameters: EU863-870, IN865-867, RU864-870, US902-928, AU915-928, AS923, KR920-923"
+                        ],
+                        "overview": "The “Wirnet™ iFemtoCell” is the ideal gateway to support your smart city, smart building or every smart project that requests dedicated indoor coverage and/or network densification, providing both a unique superior coverage and operational excellence.",
+                        "longDescription": "Kerlink INDOOR: The “Wirnet™ iFemtoCell” is the ideal gateway to support your smart city, smart building or every smart project that requests dedicated indoor coverage and/or network densification.\nRange: -20°C +55°C, (for gateway only, without power supply)\nCasing: IP30\nHumidity: 5% to 95%"
+                    },
+                    {
+                        "id": "kerlink-outdoor",
+                        "name": "Kerlink Outdoor LoRaWAN Gateway",
+                        "description": "Kerlink OUTDOOR: The “Wirnet™ iStation” is the ideal gateway to support your smart city, smart industry or any other smart project.\nRange: -40°C +60°C\nCasing: IP67 Alu (Back), Polycarbonate (Front), Inox (mounting kit)\nHumidity: 95%",
+                        "productGroup": "Kerlink Outdoor",
+                        "image": modbusLorawanImg,
+                        "images": [],
+                        "brochure": null,
+                        "specs": {
+                            "Range": "-40°C +60°C",
+                            "Casing": "IP67 Alu (Back), Polycarbonate (Front), Inox",
+                            "Humidity": "95%",
+                            "Backhaul": "4G Worldwide module with 3G/2G fallback and Ethernet"
+                        },
+                        "tags": [
+                            "Gateways & Connectivity",
+                            "Gateways"
+                        ],
+                        "features": [
+                            "Outdoor LoRa® Gateway",
                             "Carrier grade casing (IP67) for industrial use",
-                            "Backhaul connectivity: 4G Worldwide module with 3G/2G",
-                            "fallback and Ethernet (RJ45)",
-                            "Supported LoRaWAN® regional parameters: EU863-870, IN865-",
-                            "867, RU864-870, US902-928, AU915-928, AS923, KR920-923",
-                            "CloudGate Mini:",
+                            "Backhaul connectivity: 4G Worldwide module with 3G/2G fallback and Ethernet (RJ45)",
+                            "Supported LoRaWAN® regional parameters: EU863-870, IN865-867, RU864-870, US902-928, AU915-928, AS923, KR920-923"
+                        ],
+                        "overview": "The “Wirnet™ iStation” is the ideal gateway to support your smart city, smart industry or any other smart project, combining simplicity of installation, unique superior coverage and operational excellence.",
+                        "longDescription": "Kerlink OUTDOOR: The “Wirnet™ iStation” is the ideal gateway to support your smart city, smart industry or any other smart project.\nRange: -40°C +60°C\nCasing: IP67 Alu (Back), Polycarbonate (Front), Inox (mounting kit)\nHumidity: 95%"
+                    },
+                    {
+                        "id": "cloudgate-mini",
+                        "name": "CloudGate Mini LoRaWAN Gateway",
+                        "description": "CloudGate Mini: Worldwide LTE Cat 4 Programmable Multicarrier Gateway with 3G fallback.\nHumidity: 5% - 95%\nRange: -40°C to +85°C\nCase: Aluminium case",
+                        "productGroup": "CloudGate Mini",
+                        "image": modbusLorawanImg,
+                        "images": [],
+                        "brochure": null,
+                        "specs": {
+                            "Range": "-40°C to +85°C",
+                            "Case": "Aluminium case",
+                            "Humidity": "5% - 95%"
+                        },
+                        "tags": [
+                            "Gateways & Connectivity",
+                            "Gateways"
+                        ],
+                        "features": [
                             "Worldwide LTE Cat 4 Programmable Multicarrier Gateway with 3G fallback",
                             "A wide variety of wired interfaces with pre-installed versatile IO card",
                             "Optional WiFi and LoRaWAN in rear expansion slot",
                             "Secure remote access to Ethernet-connected devices",
                             "Optional battery backup"
                         ],
-                        "overview": "Kerlink Indoor:\nThe “Wirnet™ iFemtoCell” is the ideal gateway to support your smart\ncity, smart building or every smart project that requests dedicated\nindoor coverage and/or network densification, providing both a unique\nsuperior coverage and operational excellence.\n\nKerlink Outdoor:\nThe “Wirnet™ iStation” is the ideal gateway to support your smart\ncity, smart industry or any other smart project, combining simplicity of\ninstallation, unique superior coverage and operational excellence.\n\nCloudGate Mini:\nCloudGate mini provides remote access over a secure VPN tunnel to the Ethernet device(s) connected to its LAN Ethernet ports. CloudGate 4.0 next generation CloudGate 4.0 IoT gateways were designed with CloudGate’s signature features; including ruggedized design housing, industrial grade temperature ranges, timed wake-up and ignition sensing, sim connection, passive and active GPS antenna support and all are LuvitRED enabled.",
-                        "longDescription": "Kerlink INDOOR: xxxxxxxxxx\n  Range: -20°C +55°C, (for gateway only, without power supply)\n  Casing: IP30\n  Humidity: 5% to 95%\n\nKerlink OUTDOOR:xxxxxxxxxxxxx\n   Range: -40°C +60°C\n   Casing: IP67 Alu (Back), Polycarbonate (Front), Inox\n(mounting kit)\n    Humidity: 95%\n\nCloudGate Mini:\n    Humidity: 5% - 95%\n    Range: -40°C to +85°C\n   Case: Aluminium case"
+                        "overview": "CloudGate mini provides remote access over a secure VPN tunnel to the Ethernet device(s) connected to its LAN Ethernet ports. CloudGate 4.0 next generation CloudGate 4.0 IoT gateways were designed with CloudGate’s signature features; including ruggedized design housing, industrial grade temperature ranges, timed wake-up and ignition sensing, sim connection, passive and active GPS antenna support and all are LuvitRED enabled.",
+                        "longDescription": "CloudGate Mini: Worldwide LTE Cat 4 Programmable Multicarrier Gateway with 3G fallback.\nHumidity: 5% - 95%\nRange: -40°C to +85°C\nCase: Aluminium case"
                     },
                     {
                         "id": "tosilock-industrial-gateway",
