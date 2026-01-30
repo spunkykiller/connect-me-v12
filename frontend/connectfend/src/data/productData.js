@@ -69,6 +69,8 @@ import mbusMasterImg from "../assets/products/Mbus Master.png";
 import serialTcpImg from "../assets/products/Serial to TCP Converter.png";
 import u2301Img from "../assets/products/U2301_Serial_to_TCP.png";
 import tkn280xcImg from "../assets/products/Gas Konnect tkn2801C _ pulse reader + relay switch.png";
+import tkn2803pImg from "../assets/products/tkn2803p_pulse_lorawan.jpg";
+import modbusLorawanImg from "../assets/products/modbus_lorawan_converter.jpg";
 
 // Images (using placeholders where needed, map real imports if available)
 import uconnectPsImg from "../assets/products/uconnect_din_rail_ps.png";
@@ -1104,10 +1106,10 @@ const productData = [
                     },
                     {
                         "id": "cloudgate-probe-modbus",
-                        "name": "Cloudgate Probe (Modbus)",
-                        "description": "CloudGate Probe:\nModbus interface\n• RS485\n• Half duplex\n• Screw terminal connection\nOperating temperature:  -20°C to 60°C\nHumidity:  5% to 95% relative humidity (noncondensing)",
+                        "name": "Modbus to LoRaWAN Converter",
+                        "description": "Modbus to LoRaWAN Converter:\nModbus interface\n• RS485\n• Half duplex\n• Screw terminal connection\nOperating temperature:  -20°C to 60°C\nHumidity:  5% to 95% relative humidity (noncondensing)",
                         "productGroup": "Cloudgate probe",
-                        "image": cloudgateImg,
+                        "image": modbusLorawanImg,
                         "images": [],
                         "brochure": null,
                         "specs": {
@@ -1135,12 +1137,12 @@ const productData = [
                             "IP20"
                         ],
                         "overview": "WATTECO:\nThe ModBus/LoRaWAN® converter collects data from any ModBus RTU existing equipment and connects these devices to a\npublic or private LoRaWAN® network. The conerter has the capability to change the behaviour of the ModBus device by writing into its registers.\n\nCloudGate Probe:\nCloudGate Probe is a compact DIN rail mountable metering device that can connect devices over Modbus (RS-485), M-bus, Digital & Analog Input to a LoRaWAN or Cellular (NB-IoT/LTECatM)networks. This permits to monitor assets and buildings remotely in a convenient way.",
-                        "longDescription": "CloudGate Probe:\nModbus interface\n• RS485\n• Half duplex\n• Screw terminal connection\nOperating temperature:  -20°C to 60°C\nHumidity:  5% to 95% relative humidity (noncondensing)"
+                        "longDescription": "Modbus to LoRaWAN Converter:\nModbus interface\n• RS485\n• Half duplex\n• Screw terminal connection\nOperating temperature:  -20°C to 60°C\nHumidity:  5% to 95% relative humidity (noncondensing)"
                     },
                     {
                         "id": "cloudgate-probe-mbus",
-                        "name": "Cloudgate Probe (M-Bus)",
-                        "description": "CloudGate Probe:\nM-Bus mini-master\n• 34V bus power\n• up to 4 Unit Loads\n• Screw terminal connection\nOperating temperature:  -20°C to 60°C\nHumidity:  5% to 95% relative humidity (noncondensing)",
+                        "name": "M-Bus to LoRaWAN Converter",
+                        "description": "M-Bus to LoRaWAN Converter:\nM-Bus mini-master\n• 34V bus power\n• up to 4 Unit Loads\n• Screw terminal connection\nOperating temperature:  -20°C to 60°C\nHumidity:  5% to 95% relative humidity (noncondensing)",
                         "productGroup": "Cloudgate probe",
                         "image": cloudgateImg,
                         "images": [],
@@ -1161,14 +1163,14 @@ const productData = [
                             "IP20"
                         ],
                         "overview": "CloudGate Probe is a compact DIN rail mountable metering device that can connect devices over Modbus (RS-485), M-bus, Digital & Analog Input to a LoRaWAN or Cellular (NB-IoT/LTECatM)networks. This permits to monitor assets and buildings remotely in a convenient way.",
-                        "longDescription": "CloudGate Probe:\nM-Bus mini-master\n• 34V bus power\n• up to 4 Unit Loads\n• Screw terminal connection\nOperating temperature:  -20°C to 60°C\nHumidity:  5% to 95% relative humidity (noncondensing)"
+                        "longDescription": "M-Bus to LoRaWAN Converter:\nM-Bus mini-master\n• 34V bus power\n• up to 4 Unit Loads\n• Screw terminal connection\nOperating temperature:  -20°C to 60°C\nHumidity:  5% to 95% relative humidity (noncondensing)"
                     },
                     {
                         "id": "tkn2803p",
                         "name": "Pulse to LoRaWAN Converter",
                         "description": "Pulse to LoRaWAN from GasKonnect module\nType : Built-in pulse reading (Gas meter reading and storage)\nCommunication : LoRaWAN enabled Gas Konnect Pulse Reader",
                         "productGroup": "TKN2803P",
-                        "image": null,
+                        "image": tkn2803pImg,
                         "images": [],
                         "brochure": null,
                         "specs": {
@@ -1326,6 +1328,20 @@ const productData = [
                             "Gateways"
                         ],
                         "features": [
+                            "Tosibox Hub:",
+                            "Central management device for TOSIBOX network",
+                            "Secure VPN hub for multiple remote connections",
+                            "Plug & Go™ connectivity",
+                            "ISO27001 certified security",
+                            "256 Bit AES data encryption",
+                            "Web-based management interface",
+                            "Tosibox Key:",
+                            "Portable secure access device",
+                            "USB-based plug & play connectivity",
+                            "Instant VPN connection to TOSIBOX network",
+                            "No configuration required",
+                            "Compatible with all TOSIBOX Locks",
+                            "Compact and portable design",
                             "Tosibox 175:",
                             "Ports :",
                             "1 x RJ-45 WAN connection, 10/100 Mb/s, auto-negotiation (MDI / MDI-X)",
