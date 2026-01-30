@@ -438,7 +438,7 @@ export default function ProductDetails() {
             </div>
 
             <div className="variant-specs">
-              <h4>Technical Specifications</h4>
+
               {renderSpecializedSpecs(activeLorawanVariant.specs)}
             </div>
           </div>
