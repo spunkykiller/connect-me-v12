@@ -18,9 +18,6 @@ export default function Products() {
     )
   );
 
-  // show only the first 4 products in marquee
-  const displayProducts = products.slice(0, 4);
-
   return (
     <div className="products-section">
       <h1 className="products-title">Our Products</h1>
@@ -29,7 +26,7 @@ export default function Products() {
         <div className="marquee-track animate-scroll-left">
 
           {/* duplicate items 12x for seamless infinite loop on ultra-wide screens (4k+) */}
-          {Array(12).fill(displayProducts).flat().map((p, index) => (
+          {Array(12).fill(products).flat().map((p, index) => (
             <div key={index} className="product-card">
               <div className="product-image-wrapper">
                 <img src={p.image} className="product-image" alt={p.title} />
