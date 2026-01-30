@@ -144,15 +144,66 @@ Connections
 ];
 
 
+const LORAWAN_VARIANTS = [
+  {
+    id: 'kerlink-indoor',
+    name: 'Kerlink Indoor',
+    overview: `The “Wirnet™ iFemtoCell” is the ideal gateway to support your smart city, smart building or every smart project that requests dedicated indoor coverage and/or network densification, providing both a unique superior coverage and operational excellence.`,
+    specs: `Basic Features:
+• Indoor LoRa® Gateway
+• Ingress protection (IP30)
+• Backhaul connectivity: Wi-Fi 2.4GHz and Ethernet (RJ45)
+• Supported LoRaWAN® regional parameters: EU863-870, IN865-867, RU864-870, US902-928, AU915-928, AS923, KR920-923
+Technical Specifications:
+• Range: -20°C +55°C, (for gateway only, without power supply)
+• Casing: IP30
+• Humidity: 5% to 95%`
+  },
+  {
+    id: 'kerlink-outdoor',
+    name: 'Kerlink Outdoor',
+    overview: `The “Wirnet™ iStation” is the ideal gateway to support your smart city, smart industry or any other smart project, combining simplicity of installation, unique superior coverage and operational excellence.`,
+    specs: `Basic Features:
+• Outdoor LoRa® Gateway
+• Carrier grade casing (IP67) for industrial use
+• Backhaul connectivity: 4G Worldwide module with 3G/2G fallback and Ethernet (RJ45)
+• Supported LoRaWAN® regional parameters: EU863-870, IN865-867, RU864-870, US902-928, AU915-928, AS923, KR920-923
+Technical Specifications:
+• Range: -40°C +60°C
+• Casing: IP67 Alu (Back), Polycarbonate (Front), Inox (mounting kit)
+• Humidity: 95%`
+  },
+  {
+    id: 'cloudgate-mini',
+    name: 'CloudGate Mini',
+    overview: `CloudGate mini provides remote access over a secure VPN tunnel to the Ethernet device(s) connected to its LAN Ethernet ports. CloudGate 4.0 next generation CloudGate 4.0 IoT gateways were designed with CloudGate’s signature features; including ruggedized design housing, industrial grade temperature ranges, timed wake-up and ignition sensing, sim connection, passive and active GPS antenna support and all are LuvitRED enabled.`,
+    specs: `Basic Features:
+• Worldwide LTE Cat 4 Programmable Multicarrier Gateway with 3G fallback
+• A wide variety of wired interfaces with pre-installed versatile IO card
+• Optional WiFi and LoRaWAN in rear expansion slot
+• Secure remote access to Ethernet-connected devices
+• Optional battery backup
+Technical Specifications:
+• Humidity: 5% - 95%
+• Range: -40°C to +85°C
+• Case: Aluminium case`
+  }
+];
+
+
 export default function ProductDetails() {
   const { category, subcategory, productId } = useParams();
   const [product, setProduct] = useState(null);
   const [relatedProducts, setRelatedProducts] = useState([]);
   const [breadcrumbs, setBreadcrumbs] = useState([]);
   const [activeTab, setActiveTab] = useState('features');
-  // For Tosibox specialized view
+
+  // For specialized views
   const [isTosiboxPage, setIsTosiboxPage] = useState(false);
   const [activeTosiboxVariant, setActiveTosiboxVariant] = useState(TOSIBOX_VARIANTS[0]);
+
+  const [isLorawanPage, setIsLorawanPage] = useState(false);
+  const [activeLorawanVariant, setActiveLorawanVariant] = useState(LORAWAN_VARIANTS[0]);
 
   useEffect(() => {
     // 1. Find Product & Context
@@ -160,14 +211,18 @@ export default function ProductDetails() {
     let foundCat = null;
     let foundSub = null;
 
+    // Reset special views
+    setIsTosiboxPage(false);
+    setIsLorawanPage(false);
+
     if (productId) {
       // Check for specialized Tosibox ID
       if (productId === 'tosilock-industrial-gateway' || productId === 'tosibox-industrial-gateway') {
-        // Note: ensuring we catch it if slug varies slightly. 
-        // Assuming 'tosilock-industrial-gateway' based on URL provided in prompt.
         setIsTosiboxPage(true);
-      } else {
-        setIsTosiboxPage(false);
+      }
+      // Check for specialized LoRaWAN ID
+      else if (productId === 'kerlink-cloudgate') {
+        setIsLorawanPage(true);
       }
 
       for (const cat of productData) {
@@ -202,8 +257,8 @@ export default function ProductDetails() {
 
   if (!product) return <div className="pd-not-found">Loading or Product Not Found...</div>;
 
-  // --- Helper to parse/render specs for Tosibox ---
-  const renderTosiboxSpecs = (specsString) => {
+  // --- Helper to parse/render specs for Tosibox/LoRaWAN ---
+  const renderSpecializedSpecs = (specsString) => {
     if (!specsString) return null;
 
     // 1. Structure the data
@@ -216,7 +271,7 @@ export default function ProductDetails() {
       const trimmed = line.trim();
       // Heuristic: Ends with ':' or is likely a header
       const isHeader = trimmed.endsWith(':') ||
-        ['Ports', 'Connections', 'Dimensions', 'Order code'].includes(trimmed);
+        ['Ports', 'Connections', 'Dimensions', 'Order code', 'Basic Features', 'Technical Specifications'].includes(trimmed);
 
       if (isHeader) {
         if (currentList) {
@@ -265,11 +320,9 @@ export default function ProductDetails() {
         <div className="pd-hero pd-tosibox-hero">
           <div className="pd-hero-content">
             <h1 className="pd-title">{product.name}</h1>
-            {/* General Explanation FIRST */}
             <div className="pd-overview pd-tosibox-general-desc">
               <p>{TOSIBOX_GENERAL_DESC}</p>
             </div>
-
             <div className="pd-actions">
               <Link to="/contact" className="btn-primary">Request a Quote</Link>
             </div>
@@ -283,7 +336,6 @@ export default function ProductDetails() {
         <div className="pd-content pd-tosibox-content">
           <h2 className="section-title">Product Variants</h2>
 
-          {/* Variant Tab Navigation */}
           <div className="pd-tabs pd-tosibox-tabs">
             {TOSIBOX_VARIANTS.map((variant) => (
               <button
@@ -296,7 +348,6 @@ export default function ProductDetails() {
             ))}
           </div>
 
-          {/* Active Variant Content */}
           <div className="pd-tab-content pd-tosibox-variant-panel">
             <h3 className="variant-title">{activeTosiboxVariant.name}</h3>
 
@@ -307,11 +358,10 @@ export default function ProductDetails() {
 
             <div className="variant-specs">
               <h4>Technical Specifications</h4>
-              {renderTosiboxSpecs(activeTosiboxVariant.specs)}
+              {renderSpecializedSpecs(activeTosiboxVariant.specs)}
             </div>
           </div>
 
-          {/* Related Products (Reuse generic if desired, or hide) */}
           {relatedProducts.length > 0 && (
             <div className="pd-related-section">
               <h2 className="section-title">Related Products</h2>
@@ -327,7 +377,87 @@ export default function ProductDetails() {
               </div>
             </div>
           )}
+        </div>
+      </div>
+    );
+  }
 
+  // --- SPECIALIZED VIEW FOR LORAWAN GATEWAY ---
+  if (isLorawanPage) {
+    return (
+      <div className="pd-page pd-tosibox-theme">
+        {/* BREADCRUMBS */}
+        <div className="pd-breadcrumb">
+          {breadcrumbs.map((b, i) => (
+            <span key={i}>
+              {b.path !== "#" ? <Link to={b.path}>{b.label}</Link> : <span>{b.label}</span>}
+              {i < breadcrumbs.length - 1 && " / "}
+            </span>
+          ))}
+        </div>
+
+        {/* HERO SECTION */}
+        <div className="pd-hero pd-tosibox-hero">
+          <div className="pd-hero-content">
+            <h1 className="pd-title">{product.name}</h1>
+            {/* Using basic description from product data if no general desc exists */}
+            <div className="pd-overview pd-tosibox-general-desc">
+              <p>High-performance LoRaWAN gateways for indoor and outdoor industrial IoT connectivity.</p>
+            </div>
+            <div className="pd-actions">
+              <Link to="/contact" className="btn-primary">Request a Quote</Link>
+            </div>
+          </div>
+          <div className="pd-hero-image">
+            <img src={product.image} alt={product.name} />
+          </div>
+        </div>
+
+        {/* MAIN CONTENT AREA - VARIANT TABS */}
+        <div className="pd-content pd-tosibox-content">
+          <h2 className="section-title">Product Variants</h2>
+
+          <div className="pd-tabs pd-tosibox-tabs">
+            {LORAWAN_VARIANTS.map((variant) => (
+              <button
+                key={variant.id}
+                className={`pd-tab-btn ${activeLorawanVariant.id === variant.id ? 'active' : ''}`}
+                onClick={() => setActiveLorawanVariant(variant)}
+              >
+                {variant.name}
+              </button>
+            ))}
+          </div>
+
+          <div className="pd-tab-content pd-tosibox-variant-panel">
+            <h3 className="variant-title">{activeLorawanVariant.name}</h3>
+
+            <div className="variant-overview">
+              <h4>Overview</h4>
+              <p>{activeLorawanVariant.overview}</p>
+            </div>
+
+            <div className="variant-specs">
+              <h4>Technical Specifications</h4>
+              {renderSpecializedSpecs(activeLorawanVariant.specs)}
+            </div>
+          </div>
+
+          {relatedProducts.length > 0 && (
+            <div className="pd-related-section">
+              <h2 className="section-title">Related Products</h2>
+              <div className="related-grid">
+                {relatedProducts.map(rp => (
+                  <Link to={`/products/${category}/${subcategory}/${rp.id}`} key={rp.id} className="related-card">
+                    <div className="related-img">
+                      <img src={rp.image} alt={rp.name} />
+                    </div>
+                    <h4 className="related-title">{rp.name}</h4>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
     );
@@ -453,7 +583,6 @@ export default function ProductDetails() {
             </section>
           )}
         </div>
-
       </div>
 
     </div>
