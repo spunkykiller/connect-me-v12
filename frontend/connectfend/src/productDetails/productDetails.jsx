@@ -357,7 +357,7 @@ export default function ProductDetails() {
             </div>
 
             <div className="variant-specs">
-              <h4>Technical Specifications</h4>
+
               {renderSpecializedSpecs(activeTosiboxVariant.specs)}
             </div>
           </div>
