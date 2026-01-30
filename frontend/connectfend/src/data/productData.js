@@ -72,6 +72,8 @@ import tkn280xcImg from "../assets/products/Gas Konnect tkn2801C _ pulse reader 
 import tkn2803pImg from "../assets/products/tkn2803p_pulse_lorawan.jpg";
 import modbusLorawanImg from "../assets/products/modbus_lorawan_converter.jpg";
 
+import decentlabIamImg from "../assets/products/decentlab_iam.png";
+
 // Images (using placeholders where needed, map real imports if available)
 import uconnectPsImg from "../assets/products/uconnect_din_rail_ps.png";
 import milesightImg from "../assets/products/milesight_am300.png";
@@ -1253,6 +1255,7 @@ const productData = [
                         "overview": "ConnectME RS485 to TCP converter, also known as a serial to\nEthernet converter, is a device that facilitates communication between devices or systems using RS485 serial communication and TCP/IP (Transmission Control Protocol/Internet Protocol) over Ethernet networks. The purpose of this converter is to enable serial devices that use the RS485 protocol to communicate over a TCP/IP network.",
                         "longDescription": "MBUS RS485 to TCP Adapter\nProtocol : M-Bus ,Transparent\nModes : TCP Master & RS485 Slave, TCP slave & RS485 Master\nBudrate : Upto 115200 bps"
                     },
+
                     {
                         "id": "u2301t-tcp",
                         "name": "Modbus Gateway",
@@ -1490,7 +1493,7 @@ const productData = [
                         "name": "DecentLab IAM sensors",
                         "description": "DecentLab:\nTemperature -10 ... 50 °C\nHumidity 0 ... 95 % RH (non-condensing)\npower : Internal battery type\nEnclosure:  Self-extinguishing ABS wall-mount enclosure, white",
                         "productGroup": "DecentLab IAM sensors",
-                        "image": null,
+                        "image": decentlabIamImg,
                         "images": [],
                         "brochure": null,
                         "specs": {
