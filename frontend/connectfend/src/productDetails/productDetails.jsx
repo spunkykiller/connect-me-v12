@@ -8,6 +8,22 @@ const TOSIBOX_GENERAL_DESC = `Tosibox has automated secure connectivity and made
 
 const TOSIBOX_VARIANTS = [
   {
+    id: 'key',
+    name: 'Tosibox Key',
+    overview: `TOSIBOX® Key is an intelligent cryptoprocessing device that enables a secure connection between your computer and one or more TOSIBOX® Node, giving you a full visibility and control over the network devices connected to the Node.`,
+    specs: `Connections are established through a secure, encrypted VPN tunnel over the Internet or other common WANs and LANs, and permissions can be easily granted, revoked and configured in an unlimited number of ways. TOSIBOX® Key comes with a durable light metal alloy casing.`
+  },
+  {
+    id: 'hub',
+    name: 'Tosibox Hub',
+    overview: `Tosibox HUB—your gateway to building scalable, secure, and centrally managed VPN networks with unparalleled flexibility and performance. Cut access management work time from days into minutes! Tosibox HUB is the cornerstone of constructing professional and secure networks comprising a large number of sites and users. It is the VPN tunnel concentrator maintaining persistent connections to Tosibox Nodes while enforcing fine grained access controls.`,
+    specs: `• Enhanced cybersecurity through network segmentation
+• Centralized user and access management
+• Continuous 24/7 data collection and management
+• Audit trail and network monitoring
+• Data routing according to regulations and requirements`
+  },
+  {
     id: '175',
     name: 'Tosibox 175',
     overview: `TOSIBOX® 175 is a cost-effective Plug & GoTM connectivity device and is ideal for demanding industry sectors that require an all-in-one solution that is compact, able to handle all environments and suited to global market usage. The 4G module and external 4G antenna provides stable Internet access, so the node can be easily configured anywhere`,
@@ -124,22 +140,6 @@ Connections
 • 2 x Digital Input, 2 x Digital Output, 24V DC out
 • DIN rail attachment (back)
 • Maximum power consumption 10W`
-  },
-  {
-    id: 'key',
-    name: 'Tosibox Key',
-    overview: `TOSIBOX® Key is an intelligent cryptoprocessing device that enables a secure connection between your computer and one or more TOSIBOX® Node, giving you a full visibility and control over the network devices connected to the Node.`,
-    specs: `Connections are established through a secure, encrypted VPN tunnel over the Internet or other common WANs and LANs, and permissions can be easily granted, revoked and configured in an unlimited number of ways. TOSIBOX® Key comes with a durable light metal alloy casing.`
-  },
-  {
-    id: 'hub',
-    name: 'Tosibox Hub',
-    overview: `Tosibox HUB—your gateway to building scalable, secure, and centrally managed VPN networks with unparalleled flexibility and performance. Cut access management work time from days into minutes! Tosibox HUB is the cornerstone of constructing professional and secure networks comprising a large number of sites and users. It is the VPN tunnel concentrator maintaining persistent connections to Tosibox Nodes while enforcing fine grained access controls.`,
-    specs: `• Enhanced cybersecurity through network segmentation
-• Centralized user and access management
-• Continuous 24/7 data collection and management
-• Audit trail and network monitoring
-• Data routing according to regulations and requirements`
   }
 ];
 
