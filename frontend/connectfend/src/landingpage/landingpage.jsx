@@ -7,7 +7,6 @@ import Testimonials from "../testimonials/testimonial";
 import WhyTrust from "../whytrust/whytrust";
 import Licensing from "../licenses/licensing";
 import LatestNews from "../newsdata/latestNews";
-import Services from "../services/services";
 
 export default function LandingPage() {
   const [isVideoLoaded, setIsVideoLoaded] = React.useState(false);
@@ -59,7 +58,6 @@ export default function LandingPage() {
       <Testimonials />
       <WhyTrust />
       <Licensing />
-      <Services />
       <LatestNews />
     </div>
 
