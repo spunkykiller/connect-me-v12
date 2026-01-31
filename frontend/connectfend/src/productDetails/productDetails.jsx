@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import productData from "../data/productData";
+import SEO from "../components/SEO";
 import "./productDetails.css";
 
 // --- TOSIBOX SPECIFIC DATA (Parsed from Sheet Tab 55) ---
