@@ -2,10 +2,15 @@ import React from "react";
 import "./contact.css";
 import { FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import Map from "../assets/map.png";
+import SEO from "../components/SEO";
 
 export default function Contact() {
     return (
         <div className="contact-section">
+            <SEO
+                title="Contact Us - ConnectME"
+                description="Get in touch with ConnectME for smart metering and IoT inquiries. Offices in Dubai and Qatar."
+            />
             <h1 className="contact-title">Get In Touch</h1>
 
             <form className="contact-form">

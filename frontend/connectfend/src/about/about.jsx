@@ -10,11 +10,16 @@ import iso9001 from "../assets/iso_9001.png";
 import iso14001 from "../assets/iso_14001.png";
 import iso45001 from "../assets/iso_45001.png";
 import teamGroup from "../assets/team_group.jpg";
+import SEO from "../components/SEO";
 
 export default function AboutPage() {
     return (
 
         <div className="about-wrapper">
+            <SEO
+                title="About Us - ConnectME Manufacturing"
+                description="Learn about ConnectME, a UAE-based Industrial IoT manufacturer delivering cyber-secure, scalable, and sustainable metering solutions."
+            />
 
             {/* HERO SECTION */}
             <div className="about-hero">

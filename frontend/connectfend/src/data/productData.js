@@ -1362,7 +1362,7 @@ const productData = [
                         "productGroup": "TosiLock-Industrial Gateway",
                         "image": tosiboxImg,
                         "images": [],
-                        "brochure": null,
+                        "brochure": tosilockPdf,
                         "specs": {},
                         "tags": [
                             "Gateways & Connectivity",
@@ -1556,17 +1556,16 @@ const productData = [
                 products: [
                     {
                         "id": "uem300-zld",
-                        "name": "Uconnect Wireless Zone Leak Sensor",
-                        "description": "Uconnect Wireless Zone Leak Sensor\nPower supply : Battery powered (Li-SOCl2)\nIP Rating : IP67\nCommunication : LoRaWAN / NB-IoT",
+                        "name": "Wireless Zone Leak Sensor",
+                        "description": "Uconnect Wireless Zone Leak Sensor\nPower supply : 24V 2A DC for Gateway and Battery powered for Sensors\nIP Rating : IP65\nCommunication : LoRaWAN",
                         "productGroup": "UEM300-ZLD",
                         "image": uconnectZoneLeakImg,
                         "images": [],
                         "brochure": leakPdf,
                         "specs": {
-                            "Power": "Battery powered",
-                            "Communication": "LoRaWAN / NB-IoT",
-                            "Cable Length": "Customizable sensing cable",
-                            "IP Rating": "IP67"
+                            "Power": "24V 2A DC (Gateway) / Battery (Sensors)",
+                            "Communication": "LoRaWAN",
+                            "IP Rating": "IP65"
                         },
                         "tags": [
                             "Sensors & Actuators",
@@ -1574,17 +1573,17 @@ const productData = [
                         ],
                         "features": [
                             "Detects liquid leaks along the entire length of the sensing cable",
-                            "Wireless communication (LoRaWAN / NB-IoT)",
+                            "Wireless communication (LoRaWAN)",
                             "Immediate alarm notification",
-                            "Low power consumption, long battery life",
-                            "Easy installation with no wiring required"
+                            "Low power consumption",
+                            "Easy installation via Gateway"
                         ],
-                        "longDescription": "Uconnect Wireless Zone Leak Sensor\nPower supply : Battery powered (Li-SOCl2)\nIP Rating : IP67\nCommunication : LoRaWAN / NB-IoT"
+                        "longDescription": "Uconnect Wireless Zone Leak Sensor\nPower supply : 24V 2A DC for Gateway and Battery powered for Sensors\nIP Rating : IP65\nCommunication : LoRaWAN"
                     },
                     {
                         "id": "uem300-sp",
-                        "name": "Uconnect Wireless Single Point Leak Sensor",
-                        "description": "Uconnect Wireless Single Point Leak Sensor\nPower : Battery powered (4000 mAh Li-SOCl₂ )\nCommunication : LoRaWAN\nIP Rating : IP67",
+                        "name": "Wireless Single Point Leak Sensor",
+                        "description": "Uconnect Wireless Single point Leak Sensor\nPower : Battery powered (4000 mAh Li-SOCl₂ )\nCommunication : LoRaWAN\nIP Rating : IP67",
                         "productGroup": "UEM300-SP",
                         "image": uconnectSinglePointLeakImg,
                         "images": [],
@@ -1604,34 +1603,60 @@ const productData = [
                             "Submersible probe",
                             "Battery operated with long life"
                         ],
-                        "longDescription": "Uconnect Wireless Single Point Leak Sensor\nPower : Battery powered (4000 mAh Li-SOCl₂ )\nCommunication : LoRaWAN\nIP Rating : IP67"
+                        "longDescription": "Uconnect Wireless Single point Leak Sensor\nPower : Battery powered (4000 mAh Li-SOCl₂ )\nCommunication : LoRaWAN\nIP Rating : IP67"
                     },
                     {
-                        "id": "uconnect-u3001-ald-s",
-                        "name": "Uconnect Area Leak Detector (U3001-ALD-S)",
-                        "description": "Area Leak Detector with Relay Output.\nFeatures sensitivity adjustment and LED indicators for Power and Leak status.",
-                        "productGroup": "Uconnect Area Leak Detector",
-                        "image": uconnectAldImg,
+                        "id": "uem300-cl",
+                        "name": "Wireless Capacitive Level Sensor",
+                        "description": "Uconnect Wireless Capacitive Level Sensor\nPower Supply : 2 × ER14505 lithium batteries (3.6 V)\nCommunication : LoRa / LoRaWAN Class A\nBattery Life : Upto 4.6 years",
+                        "productGroup": "UEM300-CL",
+                        "image": uconnectClsImg,
                         "images": [],
                         "brochure": leakPdf,
                         "specs": {
-                            "Power Supply": "12-24V DC",
-                            "Output": "Relay Out (NO/NC)",
-                            "Indicators": "LED (Power, Leak)",
-                            "Sensitivity": "Adjustable"
+                            "Power Supply": "2 × ER14505 lithium batteries (3.6 V)",
+                            "Communication": "LoRa / LoRaWAN Class A",
+                            "Battery Life": "Upto 4.6 years"
                         },
                         "tags": [
                             "Sensors & Actuators",
                             "Water Leak Detection Sensor"
                         ],
                         "features": [
+                            "Capacitive Level Sensing",
+                            "Wireless LoRa/LoRaWAN Class A",
+                            "Long battery life (up to 4.6 years)",
+                            "High precision"
+                        ],
+                        "longDescription": "Uconnect Wireless Capacitive Level Sensor\nPower Supply : 2 × ER14505 lithium batteries (3.6 V)\nCommunication : LoRa / LoRaWAN Class A\nBattery Life : Upto 4.6 years"
+                    },
+                    {
+                        "id": "u3001-ald-s",
+                        "name": "Wired Non-Location Area Leak Sensor",
+                        "description": "Uconnect Wired Non-Location Area Leak Sensor\nPower Supply :\tDC 9–30 V (DC 12 V recommended)\nMax Sensing Cable Length : Up to 500 m\nDetection Method : Non-positional liquid leak detection",
+                        "productGroup": "U3001-ALD-S",
+                        "image": uconnectAldImg,
+                        "images": [],
+                        "brochure": leakPdf,
+                        "specs": {
+                            "Power Supply": "DC 9–30 V (DC 12 V recommended)",
+                            "Max Cable Length": "Up to 500 m",
+                            "Detection Method": "Non-positional liquid leak detection",
+                            "Output": "Relay Out (NO/NC)"
+                        },
+                        "tags": [
+                            "Sensors & Actuators",
+                            "Water Leak Detection Sensor"
+                        ],
+                        "features": [
+                            "Non-positional liquid leak detection",
                             "Detects water presence across a surface or zone",
                             "Adjustable sensitivity knob",
                             "Relay output for direct control or BMS integration",
                             "NC/COM/NO Relay connections",
                             "Robust industrial housing"
                         ],
-                        "longDescription": "The U3001-ALD-S matches the functionality of an area leak detector with adjustable sensitivity and relay outputs, ideal for server rooms, warehouses, and critical infrastructure monitoring."
+                        "longDescription": "Uconnect Wired Non-Location Area Leak Sensor\nPower Supply :\tDC 9–30 V (DC 12 V recommended)\nMax Sensing Cable Length : Up to 500 m\nDetection Method : Non-positional liquid leak detection"
                     },
                     {
                         "id": "u3101l-ald-s",

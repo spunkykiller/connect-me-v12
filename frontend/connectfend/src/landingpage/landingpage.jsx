@@ -8,11 +8,17 @@ import WhyTrust from "../whytrust/whytrust";
 import Licensing from "../licenses/licensing";
 import LatestNews from "../newsdata/latestNews";
 
+import SEO from "../components/SEO";
+
 export default function LandingPage() {
   const [isVideoLoaded, setIsVideoLoaded] = React.useState(false);
 
   return (
     <div>
+      <SEO
+        title="ConnectME - Smart Metering & Industrial IoT Solutions"
+        description="ConnectME delivers end-to-end smart metering, utility billing, and industrial IoT solutions across the GCC. Trusted by 120+ customers."
+      />
       <div className="landing-container">
         <div className="hero-content-wrapper">
 

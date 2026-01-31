@@ -6,6 +6,7 @@ import BlogsPage from "../blogspage/blogsPage1";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
+import SEO from "../components/SEO";
 
 export default function BlogPage() {
   const { id } = useParams();
@@ -15,6 +16,11 @@ export default function BlogPage() {
 
   return (
     <div className="blog-section">
+      <SEO
+        title={`${blog.title} - ConnectME Blog`}
+        description={`Read about ${blog.title}. Category: ${blog.category}. Published on: ${blog.date}.`}
+        type="article"
+      />
 
       <div className="blog-banner">
         <img src={blog.image} alt={blog.title} />
@@ -28,7 +34,7 @@ export default function BlogPage() {
           {blog.category} | {blog.date}
         </p>
 
-        <div 
+        <div
           className="blog-text"
           dangerouslySetInnerHTML={{ __html: blog.content }}
         />

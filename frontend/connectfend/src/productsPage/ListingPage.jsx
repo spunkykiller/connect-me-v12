@@ -3,6 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import productData from "../data/productData";
 import "./ListingPage.css";
 
+import SEO from "../components/SEO";
 // Helper to deduce tags/protocols from data for filters
 const getAllTags = (products) => {
     const tags = new Set();
@@ -92,8 +93,23 @@ export default function ListingPage() {
         return crumbs;
     };
 
+
+
+    const getPageTitle = () => {
+        if (subcategory) {
+            return productData.find(c => c.slug === category)?.subcategories.find(s => s.slug === subcategory)?.name;
+        }
+        return productData.find(c => c.slug === category)?.category || "All Products";
+    };
+
+    const pageTitle = getPageTitle();
+
     return (
         <div className="listing-page">
+            <SEO
+                title={`${pageTitle} - ConnectME Products`}
+                description={`Explore our range of ${pageTitle} for Industrial IoT, Smart Metering, and Automation.`}
+            />
 
             {/* HEADER / BREADCRUMB */}
             <div className="listing-header">
@@ -106,10 +122,7 @@ export default function ListingPage() {
                     ))}
                 </div>
                 <h1 className="listing-title">
-                    {subcategory ?
-                        productData.find(c => c.slug === category)?.subcategories.find(s => s.slug === subcategory)?.name
-                        : productData.find(c => c.slug === category)?.category || "All Products"
-                    }
+                    {pageTitle}
                 </h1>
             </div>
 

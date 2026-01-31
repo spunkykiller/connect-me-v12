@@ -3,6 +3,7 @@ import "./project.css";
 import projectData from "../data/ongoingProjects";
 import clients from "../data/clientsData";
 import projects from "../data/projectsData";
+import SEO from "../components/SEO";
 
 export default function OngoingProjects() {
 
@@ -11,6 +12,10 @@ export default function OngoingProjects() {
 
     return (
         <div className="projects-container">
+            <SEO
+                title="Our Work & Projects - ConnectME"
+                description="Explore our portfolio of successful smart metering and IoT deployments across the GCC. See our ongoing and completed projects."
+            />
 
             {/* TABS NAVIGATION */}
             <div className="work-tabs">

@@ -302,10 +302,16 @@ export default function ProductDetails() {
     });
   };
 
+
+
   // --- SPECIALIZED VIEW FOR TOSIBOX ---
   if (isTosiboxPage) {
     return (
       <div className="pd-page pd-tosibox-theme">
+        <SEO
+          title={`${product.name} - ConnectME`}
+          description={TOSIBOX_GENERAL_DESC.substring(0, 160)}
+        />
         {/* BREADCRUMBS */}
         <div className="pd-breadcrumb">
           {breadcrumbs.map((b, i) => (
@@ -386,6 +392,10 @@ export default function ProductDetails() {
   if (isLorawanPage) {
     return (
       <div className="pd-page pd-tosibox-theme">
+        <SEO
+          title={`${product.name} - LoRaWAN Gateway`}
+          description="High-performance LoRaWAN gateways for indoor and outdoor industrial IoT connectivity."
+        />
         {/* BREADCRUMBS */}
         <div className="pd-breadcrumb">
           {breadcrumbs.map((b, i) => (
@@ -466,6 +476,10 @@ export default function ProductDetails() {
   // --- GENERIC VIEW (Old Layout) ---
   return (
     <div className="pd-page">
+      <SEO
+        title={`${product.name} - ConnectME Product`}
+        description={product.description ? product.description.substring(0, 160) : "ConnectME Industrial IoT Product"}
+      />
 
       {/* BREADCRUMBS */}
       <div className="pd-breadcrumb">

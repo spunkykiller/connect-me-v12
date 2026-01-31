@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import blogData from "../data/blogData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import SEO from "../components/SEO";
 
 export default function Blogs() {
   const blogsPerLoad = 8;
@@ -15,6 +16,10 @@ export default function Blogs() {
 
   return (
     <div className="blogs-section">
+      <SEO
+        title="ConnectME Blog - Industry Insights & News"
+        description="Stay updated with the latest trends in Industrial IoT, Smart Metering, and Utility Billing from ConnectME experts."
+      />
 
       <h2 className="blogs-title">Blogs</h2>
 
